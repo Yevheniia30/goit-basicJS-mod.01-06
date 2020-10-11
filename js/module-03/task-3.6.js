@@ -1,6 +1,18 @@
+
+// поиск самого большого числа
+const maxValue = function (array) {
+   let value = array[0];
+   for (let i = 0; i < array.length; i += 1) {
+      if (value > array[i]) {
+         value = array[i];
+      }
+   }
+   console.log(value);
+};
+maxValue([-5, -6, -2, -10]);
+
 // Суммирование значений свойства из массива объектов
 // Напиши функцию calculateTotalPrice(allProdcuts, productName), которая получает массив объектов и имя продукта (значение свойства name). Возвращает общую стоимость продукта (цена умноженная на количество).
-
 
 function calculateTotalPrice(array, prop) {
   'use strict';
